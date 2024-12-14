@@ -1,0 +1,23 @@
+@use "global" as *;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: $black;
+    font-size: 14px;
+
+    @include respond-to-medium {
+        font-size: 12px;
+    }
+
+    @include respond-to-small {
+        font-size: 10px;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+        color: $white;
+    }
+}
